@@ -30,7 +30,7 @@
               class="header__link header__link_active header__marker"
               href="#lots"
             >
-              <span class="header__link-marker"></span> посмотреть лоты</a
+              посмотреть лоты</a
             >
           </li>
           <!-- <li class="header__marker">
@@ -70,37 +70,60 @@
     </header>
 
     <main>
-      <section class="cover">
-        <h1 class="visually-hidden">аукцион старинных вещей</h1>
-
+      <section class="cover lens-image">
+        <img
+          class="cover__image-lens"
+          src="../images/cover.jpg"
+          alt="картинка для фона первой секции"
+        />
+        <!-- <div > -->
+        <!-- <h1 class="visually-hidden">аукцион старинных вещей</h1> -->
+        <!-- <img class="cover-img" src="../images/cover.jpg"> -->
         <!-- вторая секция -->
         <div class="cover__text">
-          <div class="cover__text-headline">
-            <!-- первое слово -->
-            <h2 class="cover__text-wrap-words-line">
+          <!-- заголовком следует обернуть все строки -->
+
+          <!-- первое слово -->
+
+          <article class="cover__headline-wrapper">
+            <h2 class="cover__text-headline">
+              <span
+                class="cover__text-headline-word cover__text-headline-word-space-left"
+                >он</span
+              >
               <span
                 class="cover__text-headline-word cover__headline-position-left"
+                >о</span
               >
-                он о
-              </span>
             </h2>
-            <!-- второе слово  -->
-            <h2 class="cover__text-wrap-words-line">
+          </article>
+
+          <!-- второе слово  -->
+          <article class="cover__headline-wrapper">
+            <h2 class="cover__text-headline">
+              <span
+                class="cover__text-headline-word cover__text-headline-word-space-center"
+                >теб</span
+              >
               <span
                 class="cover__text-headline-word cover__headline-position-center"
+                >е</span
               >
-                теб е
-              </span>
             </h2>
-            <!-- третье слово -->
-            <h2 class="cover__text-wrap-words-line">
+          </article>
+          <!-- третье слово -->
+          <article class="cover__headline-wrapper">
+            <h2 class="cover__text-headline">
+              <span
+                class="cover__text-headline-word cover__text-headline-word-space-right"
+                >н</span
+              >
               <span
                 class="cover__text-headline-word cover__headline-position-right"
+                >адо</span
               >
-                н адо
-              </span>
             </h2>
-          </div>
+          </article>
         </div>
 
         <div class="cover__action">
@@ -111,74 +134,101 @@
             Сделать ставку
           </button>
         </div>
+        <!-- </div> -->
       </section>
+      <!------------ секция лоты ------------------------------------------------------------------->
 
       <section class="lots" id="lots">
-        <section class="header-lots">
+        <div class="header-lots">
           <h2 class="header-text">Лоты</h2>
-        </section>
+        </div>
 
-        <ul class="cards cards-last">
-          <a
-            href="./index.html/card-producer"
-            title="карточка с фильмом"
-            class="link-card link-image-producer"
-          >
-            <article class="card card-image-producer">
-              <li class="card-text card-text-header">
-                <h3 class="card-name-headline">
-                  Фильм режиссёра, который бросил киношколу
-                </h3>
-              </li>
-              <li class="card-content">
-                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-                ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-              </li>
-            </article>
-          </a>
+        <div class="cards cards-lots">
+          <!------------------начало первого в списке лот ------------------------------------>
 
-          <a
-            href="./index.html/card-book"
-            title="карточка книги"
-            class="link-card link-image-book"
-          >
-            <article class="card card-image-book">
-              <li class="card-text card-text-header">
-                <h3 class="card-name-headline">
-                  Книга, где описан один скучный день из жизни рекламного агента
-                </h3>
-              </li>
-              <li class="card-content">
-                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
-                переходами на древнеанглийский. В ней одновременно
-                рассказывается о 16 июня 1904 года и об истории литературы,
-                начиная с античных времён. И это всё накладывается на эпическую
-                поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
-                Джойса?
-              </li>
-            </article>
-          </a>
+          <article class="card lens-image">
+            <a
+              href="./index.html/card-producer"
+              title="карточка с фильмом"
+              class="link-card link-image-producer"
+            ></a>
+            <img
+              src="./images/card-lot-01.jpg"
+              alt="изображение карточки с фильмом"
+              class="card-image-lens"
+            />
 
-          <a
-            href="./index.html/card-picture"
-            title="карточка с картиной"
-            class="link-card link-image-picture"
-          >
-            <article class="card card-image-triangle">
-              <li class="card-text card-text-header">
-                <h3 class="card-name-headline">
-                  Картина, которую повторит даже 5-летний сын маминой подруги
-                </h3>
-              </li>
-              <li class="card-content">
-                Ну действительно, там линия, тут кружочек, а здесь и вовсе
-                что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                котиков… Сколько бы вы на такое поставили, если бы не знали, что
-                это — одна из революционных работ Кандинского?
-              </li>
-            </article>
-          </a>
-        </ul>
+            <!-- <div class="card-text card-text-header"> -->
+            <h3 class="card-text card-text-header card-name-headline">
+              Фильм режиссёра, который бросил киношколу
+            </h3>
+            <!-- </div> -->
+
+            <p class="card-content">
+              Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+              ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+            </p>
+          </article>
+
+          <!--------------------конец первого в списке лота ------------------------------------------------->
+
+          <!------------------начало второго в списке лот ------------------------------------>
+          <article class="card lens-image">
+            <!--второй в списке лот -->
+            <a
+              href="./index.html/card-book"
+              title="карточка книги"
+              class="link-card link-image-book"
+            >
+            </a>
+            <img
+              class="card-image-lens"
+              src="./images/card-lot-02.jpg"
+              alt="изображение карточки с книгой"
+            />
+
+            <h3 class="card-text card-name-headline card-text-header">
+              Книга, где описан один скучный день из жизни рекламного агента
+            </h3>
+
+            <p class="card-content">
+              Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
+              переходами на древнеанглийский. В ней одновременно рассказывается
+              о 16 июня 1904 года и об истории литературы, начиная с античных
+              времён. И это всё накладывается на эпическую поэму Гомера. Сколько
+              бы вы поставили на «Улисса» Джеймса Джойса?
+            </p>
+          </article>
+
+          <!--------------------конец второго в списке лота ------------------------------------------------->
+
+          <!--------------------начало третий в списке лота ------------------------------------------------->
+          <article class="card lens-image">
+            <!--третий в списке лот -->
+            <a
+              href="./index.html/card-picture"
+              title="карточка с картиной"
+              class="link-card link-image-picture"
+            ></a>
+            <img
+              src="./images/card-lot-03.jpg"
+              alt="изображение карточки с картиной"
+              class="card-image-lens"
+            />
+
+            <h3 class="card-text card-name-headline card-text-header">
+              Картина, которую повторит даже 5-летний сын маминой подруги
+            </h3>
+
+            <p class="card-content">
+              Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
+              похожее на инфузорию-туфельку. Никаких полей, лесов, котиков…
+              Сколько бы вы на такое поставили, если бы не знали, что это — одна
+              из революционных работ Кандинского?
+            </p>
+          </article>
+          <!--------------------конец третий в списке лота ------------------------------------------------->
+        </div>
 
         <div class="post-text-article">
           <a href="/more" class="link-article">посмотреть больше</a>
@@ -200,9 +250,9 @@
           <p class="about__text-about">
             Здесь вы не встретите очередное пафосное собрание невероятно
             дорогого антиквариата. Наши лоты вообще не должны были попасть ни на
-            один аукцион. Потому что кому нужен дневник девочки-подростка
-            footerили картина, которую может нарисовать даже ребёнок? Кому нужны
-            все эти странные вещи, созданные любителями?
+            один аукцион. Потому что кому нужен дневник девочки-подростка или
+            картина, которую может нарисовать даже ребёнок? Кому нужны все эти
+            странные вещи, созданные любителями?
           </p>
           <p class="about__text-about aabout__text-about-part-two">
             Слишком сложные или, наоборот, слишком простые. Опережающие своё
@@ -214,62 +264,61 @@
           </p>
         </div>
       </section>
-
-      <footer class="footer__list">
-        <div class="contact address__wrap">
-          <address class="address list__contacts-footer">
-            <a class="contact contact-footer" href="tel:+9-999-555-5555"
-              >+9 999 555 5555</a
-            >
-            <a class="contact contact-footer" href="mailto:info@sobaka.ge"
-              >info@sobaka.ge</a
-            >
-            <p class="contact contact-footer">
-              наб. Принсенграхт 263-265 , Амстердам
-            </p>
-          </address>
-        </div>
-
-        <nav class="footer__list-nav">
-          <a class="footer__list-nav-unlink" href="/index.html"> главная </a>
-          <a class="footer__list-nav-link" href="#lots"> посмотреть лоты </a>
-          <a class="footer__list-nav-link" href="#about"> об аукционе </a>
-        </nav>
-
-        <div class="footer__lists-icons">
-          <ul class="footer__list-icons">
-            <li class="footer__list-item">
-              <a class="footer__list-icon-item" href="http://youtube.com">
-                <img
-                  class="footer__list-icon-item-img"
-                  src="./images/yt.svg"
-                  alt="icon youtube"
-                />
-              </a>
-            </li>
-
-            <li class="footer__list-item">
-              <a class="footer__list-icon-item" href="http://vk.com">
-                <img
-                  class="footer__list-icon-item-img"
-                  src="./images/vk.svg"
-                  alt="icon VK"
-                />
-              </a>
-            </li>
-
-            <li class="footer__list-item">
-              <a class="footer__list-icon-item" href="http://pinterest.com">
-                <img
-                  class="footer__list-icon-item-img"
-                  src="./images/pinterest.svg"
-                  alt="icon pinterest"
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </footer>
     </main>
+    <footer class="footer__list">
+      <div class="contact address__wrap">
+        <address class="address list__contacts-footer">
+          <a class="contact contact-footer" href="tel:+9-999-555-5555"
+            >+9 999 555 5555</a
+          >
+          <a class="contact contact-footer" href="mailto:info@sobaka.ge"
+            >info@sobaka.ge</a
+          >
+          <p class="contact contact-footer">
+            наб. Принсенграхт 263-265 , Амстердам
+          </p>
+        </address>
+      </div>
+
+      <nav class="footer__list-nav">
+        <a class="footer__list-nav-unlink" href="/index.html"> главная </a>
+        <a class="footer__list-nav-link" href="#lots"> посмотреть лоты </a>
+        <a class="footer__list-nav-link" href="#about"> об аукционе </a>
+      </nav>
+
+      <div class="footer__lists-icons">
+        <ul class="footer__list-icons">
+          <li class="footer__list-item">
+            <a class="footer__list-icon-item" href="http://youtube.com">
+              <img
+                class="footer__list-icon-item-img"
+                src="./images/yt.svg"
+                alt="icon youtube"
+              />
+            </a>
+          </li>
+
+          <li class="footer__list-item">
+            <a class="footer__list-icon-item" href="http://vk.com">
+              <img
+                class="footer__list-icon-item-img"
+                src="./images/vk.svg"
+                alt="icon VK"
+              />
+            </a>
+          </li>
+
+          <li class="footer__list-item">
+            <a class="footer__list-icon-item" href="http://pinterest.com">
+              <img
+                class="footer__list-icon-item-img"
+                src="./images/pinterest.svg"
+                alt="icon pinterest"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
